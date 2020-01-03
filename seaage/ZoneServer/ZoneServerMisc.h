@@ -1,0 +1,152 @@
+/*
+**	ZoneServerMisc.h
+**	zone server misc functions.
+**
+**	Hawke Hsieh, 2003/01/07.
+*/
+#ifndef _ZONESERVERMISC_H_
+#define _ZONESERVERMISC_H_
+
+
+extern	int     FindUsablePlayerCharacterInfo(void);
+extern	int     FindNextUsedCharacterInfo(int start);
+extern	int     FindUsableConnection(void);
+extern	int     FindUsableSyncConnection(void);
+extern	int     FindPlayerCharacterInfoByMainName(char *mainname);
+extern	int     FindPlayerCharacterInfoByAccount(char *account);
+extern	BOOL    FindLoginedPlayerCharacterInfo(char *id);
+extern	int     FindUsableZoneInfo(void);
+extern	int     FindZoneInfoByName(char *name);
+extern	int     FindZoneInfoByMapName(char *name);
+extern	int		FindCharacterInfoByQQID(ULONG ID);
+extern	int		FindMarcoDataByMainName(char *mainname);
+extern	float	float_to_precision_10_float(float value);
+extern	void	encode_sea_npc_sync_position(SLONG &sync_x,SLONG &sync_y,SLONG &sync_z,SLONG degree_dir, SLONG x, SLONG y,SLONG speed_x, SLONG speed_y);
+extern	void	decode_sea_npc_sync_position(SLONG sync_x, SLONG sync_y, SLONG sync_z, 
+											 SLONG &degree_dir, SLONG &x, SLONG &y, 
+											 SLONG &speed_x, SLONG &speed_y);
+extern	void	ServerDoGetWorldInfo(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoWorldLoginOK(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoZoneNameDuplicate(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGetSystemMessage(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQPlayerLogin(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQLoginOK(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQPlayerLogout(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestMyData(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetMyData(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestFriendList(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetFriendList(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestGuildFriendList(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetGuildFriendList(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQSetMyState(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetMyState(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetOtherState(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestQueryAddList(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestQueryOnlineAddList(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetQueryAddList(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetQueryAddListEnd(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestAddSomeone(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetAddSomeone(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetAddGuildFriend(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQFriendLogin(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestQuerySomeone(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetQuerySomeone(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQSend2OneMsg(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQSend2SomeMsg(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetMsg(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestPlayerCount(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetPlayerCount(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestDelFriend(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetDelFriend(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestDelGuildFriend(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQGetDelGuildFriend(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestTransferItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQRequestTransferItemFromWorld(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQTransferItemOKFromWorld(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoQQTransferItemFailFromWorld(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoPlayerLogin(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoPlayerLogout(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestPlayerList(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGetPublicTalk(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGetWorldTalk(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoSaveUserDetail(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoHitMap(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoEndHitMap(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoHitNPC(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoHitItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoSendAttackSwitch(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoSendBagSwitch(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoChangeMouseSkill(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoUpdateNPCBaseData(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestChangeWeather(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGameStart(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestExitGame(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoNewZoneInfo(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoOneZoneClose(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRefreshZoneInfo(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGetZoneInfo(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoZoneGetItemID(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoZoneRequestItemID(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ConvertDBCharacterDataToZoneCharacter(DWORD npc_no, TPOS_DB_CHARACTER *dbcharacter);
+extern	void	ConvertZoneCharacterDataToDBCharacter(DWORD npc_no, TPOS_DB_CHARACTER *dbcharacter);
+extern	void	ConvertZoneCharacterToDBCharacter(TPOS_CHARACTER *character, TPOS_DB_CHARACTER *dbcharacter);
+extern	void	ConvertZoneCharacterDataToEventGetPlayerList(SLONG npc_no,TPOS_EVENT_GETPLAYERLIST *eventplayerlist);
+extern	void	ExchangeZoneCharacterDataToMyCharacterData(DWORD npc_no, TPOS_EVENT_MYCHARACTER *eventmycharacter);
+extern	int		SetWeather(TPOS_WEATHER *Weather);
+extern	int		ReturnZoneType(DWORD zonetype);
+extern	void	ServerDoClearBadConnect();
+extern	void	ServerDoRequestSetHandQuickSkill(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestUseHandQuickSkill(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitBagItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitHeadItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitNeckItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitBodyItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitWaistItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitGloveItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitWeaponItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitWristItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitFeetItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitOtherAItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitOtherBItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitOtherCItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitSashItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitTransItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitTreasureItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestDropItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitMapItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoClearOnMouseItemForPlayerExit(int npc_no);
+extern	void	ServerDoRequestNpcProc(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoSendNotifyNpcOnPauseToAll(SLONG	npc_index);
+extern	void	ServerDoSendNotifyNpcNoPauseToAll(SLONG	npc_index);
+extern	void	ServerDoRequestChangeDir(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoChangeMainNameColorAtFirstFight(ULONG src_npcno, ULONG dest_npcno);
+extern	void	ServerDoChangeMainNameColorAtLastFight(ULONG src_npcno, ULONG dest_npcno);
+extern	void	ServerSendGoodEvilToPlayer(ULONG npc_no, SLONG	goodevil, ULONG pkcount, ULONG pkedcount);
+extern	void	ServerDoRequestBuyItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestSellItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestFullHpMp(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestJumpTo(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestMoney(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestExp(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestMoveFast(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestSuperMan(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestDead(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestChangeZone(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestGetMap(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoGodRequestPropertyPoint(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestJoinTeam(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoReequestAgreeJoinTeam(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestExitTeam(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestKickTeamMember(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoZoneRequestJoinTeam(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoZoneRequestAgreeJoinTeam(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoZoneRequestExitTeam(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoZoneRequestKickTeamMember(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoZoneNotifyJoinTeamFull(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestSaveMoney(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestLoadMoney(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestHitBankItem(TPOS_CN *cn, TPOS_PACKET *packet);
+extern	void	ServerDoRequestSeparateMap(TPOS_CN *cn, TPOS_PACKET *packet);
+//
+#endif//_ZONESERVERMISC_H_

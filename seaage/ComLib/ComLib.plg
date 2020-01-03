@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ComLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP33.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/ComLib.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_DBFunc.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP33.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP34.tmp" with contents
+[
+/nologo /out:"Debug\ComLib.lib" 
+".\Debug\Dummy.obj"
+".\Debug\NetGE_Account.obj"
+".\Debug\NetGE_AI.obj"
+".\Debug\NetGE_Bank.obj"
+".\Debug\NetGE_Character.obj"
+".\Debug\NetGE_Common.obj"
+".\Debug\NetGE_DBFunc.obj"
+".\Debug\NetGE_Doing.obj"
+".\Debug\NetGE_Fight.obj"
+".\Debug\NetGE_Global.obj"
+".\Debug\NetGE_House.obj"
+".\Debug\NetGE_Item.obj"
+".\Debug\NetGE_Magic.obj"
+".\Debug\NetGE_MAGIC_mindoingKind.obj"
+".\Debug\NetGE_MagicBreak.obj"
+".\Debug\NetGE_MapMask.obj"
+".\Debug\NetGE_MapProc.obj"
+".\Debug\NetGE_Message.obj"
+".\Debug\NetGE_MFSystem.obj"
+".\Debug\NetGE_Misc.obj"
+".\Debug\NetGE_NPC_mindoingKind.obj"
+".\Debug\NetGE_ODBC.obj"
+".\Debug\NetGE_Port.obj"
+".\Debug\NetGE_QQ.obj"
+".\Debug\NetGE_Script.obj"
+".\Debug\NetGE_Ship.obj"
+".\Debug\NetGE_Skill.obj"
+".\Debug\NetGE_SkillProc.obj"
+".\Debug\NetGE_Store.obj"
+".\Debug\NetGE_Treasury.obj"
+".\Debug\NetGE_Utility.obj"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP34.tmp"
+<h3>Output Window</h3>
+Compiling...
+NetGE_DBFunc.cpp
+D:\程序\seavss\vss\seaage\ComLib\NetGE_DBFunc.cpp(2226) : warning C4101: 'len' : unreferenced local variable
+D:\程序\seavss\vss\seaage\ComLib\NetGE_DBFunc.cpp(2465) : warning C4101: 'len' : unreferenced local variable
+D:\程序\seavss\vss\seaage\ComLib\NetGE_DBFunc.cpp(2495) : warning C4101: 'len' : unreferenced local variable
+Creating library...
+
+
+
+<h3>Results</h3>
+ComLib.lib - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

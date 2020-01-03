@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DoorServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP74.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/DoorServer.pdb" /debug /machine:I386 /out:"Debug/DoorServer.exe" /pdbtype:sept 
+".\Debug\CloseSocket.obj"
+".\Debug\DoorServer_Create.obj"
+".\Debug\DoorServerMisc.obj"
+".\Debug\DoorServerShutDown.obj"
+".\Debug\InitSocket.obj"
+".\Debug\ListView.obj"
+".\Debug\Log.obj"
+".\Debug\Main.obj"
+".\Debug\ProcessSocket.obj"
+".\Debug\Resource.res"
+".\Debug\StatusBar.obj"
+".\Debug\Dummy.obj"
+".\Debug\NetGE_Account.obj"
+".\Debug\NetGE_AI.obj"
+".\Debug\NetGE_Bank.obj"
+".\Debug\NetGE_Character.obj"
+".\Debug\NetGE_Common.obj"
+".\Debug\NetGE_DBFunc.obj"
+".\Debug\NetGE_Doing.obj"
+".\Debug\NetGE_Fight.obj"
+".\Debug\NetGE_Global.obj"
+".\Debug\NetGE_House.obj"
+".\Debug\NetGE_Item.obj"
+".\Debug\NetGE_Magic.obj"
+".\Debug\NetGE_MAGIC_mindoingKind.obj"
+".\Debug\NetGE_MagicBreak.obj"
+".\Debug\NetGE_MapMask.obj"
+".\Debug\NetGE_MapProc.obj"
+".\Debug\NetGE_Message.obj"
+".\Debug\NetGE_MFSystem.obj"
+".\Debug\NetGE_Misc.obj"
+".\Debug\NetGE_NPC_mindoingKind.obj"
+".\Debug\NetGE_ODBC.obj"
+".\Debug\NetGE_Port.obj"
+".\Debug\NetGE_QQ.obj"
+".\Debug\NetGE_Script.obj"
+".\Debug\NetGE_Ship.obj"
+".\Debug\NetGE_Skill.obj"
+".\Debug\NetGE_SkillProc.obj"
+".\Debug\NetGE_Store.obj"
+".\Debug\NetGE_Treasury.obj"
+".\Debug\NetGE_Utility.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP74.tmp"
+<h3>Output Window</h3>
+Linking...
+LIBCMTD.lib(tolower.obj) : error LNK2005: __tolower already defined in LIBCD.lib(tolower.obj)
+LIBCMTD.lib(tolower.obj) : error LNK2005: _tolower already defined in LIBCD.lib(tolower.obj)
+LINK : warning LNK4098: defaultlib "LIBCMTD" conflicts with use of other libs; use /NODEFAULTLIB:library
+2denginedbg.lib(winmain.obj) : error LNK2001: unresolved external symbol "void __cdecl gameExit(void)" (?gameExit@@YAXXZ)
+2denginedbg.lib(winmain.obj) : error LNK2001: unresolved external symbol "int __cdecl gameMain(void)" (?gameMain@@YAHXZ)
+2denginedbg.lib(winmain.obj) : error LNK2001: unresolved external symbol "int __cdecl gameInit(void)" (?gameInit@@YAHXZ)
+2denginedbg.lib(winmain.obj) : error LNK2001: unresolved external symbol "int __cdecl gameSet(void)" (?gameSet@@YAHXZ)
+2denginedbg.lib(xdraw.obj) : error LNK2001: unresolved external symbol _DirectDrawCreateEx@16
+2denginedbg.lib(xdraw.obj) : error LNK2001: unresolved external symbol _IID_IDirectDraw7
+Debug/DoorServer.exe : fatal error LNK1120: 6 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+DoorServer.exe - 9 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

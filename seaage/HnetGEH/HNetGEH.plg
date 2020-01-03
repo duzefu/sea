@@ -1,0 +1,608 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DoorServer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Release/Resource.res" /d "NDEBUG" "D:\VC\SeaAge\DoorServer\Resource.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP20D.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\POS_INCLUDE" /I "..\POS_DLL_INCLUDE" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/DoorServer.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\VC\SeaAge\DoorServer\CloseSocket.cpp"
+"D:\VC\SeaAge\DoorServer\InitSocket.cpp"
+"D:\VC\SeaAge\DoorServer\ProcessSocket.cpp"
+"D:\VC\SeaAge\DoorServer\DoorServer_Create.cpp"
+"D:\VC\SeaAge\DoorServer\DoorServerMisc.cpp"
+"D:\VC\SeaAge\DoorServer\DoorServerShutDown.cpp"
+"D:\VC\SeaAge\DoorServer\ListView.cpp"
+"D:\VC\SeaAge\DoorServer\Log.cpp"
+"D:\VC\SeaAge\DoorServer\Main.cpp"
+"D:\VC\SeaAge\DoorServer\StatusBar.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP20D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP20E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib comlib.lib /nologo /subsystem:windows /incremental:yes /pdb:"Release/DoorServer.pdb" /machine:I386 /out:"Release/DoorServer.exe" 
+.\Release\CloseSocket.obj
+.\Release\InitSocket.obj
+.\Release\ProcessSocket.obj
+.\Release\DoorServer_Create.obj
+.\Release\DoorServerMisc.obj
+.\Release\DoorServerShutDown.obj
+.\Release\ListView.obj
+.\Release\Log.obj
+.\Release\Main.obj
+.\Release\StatusBar.obj
+.\Release\Resource.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP20E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+CloseSocket.cpp
+InitSocket.cpp
+ProcessSocket.cpp
+DoorServer_Create.cpp
+DoorServerMisc.cpp
+DoorServerShutDown.cpp
+ListView.cpp
+Log.cpp
+Main.cpp
+StatusBar.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP210.bat" with contents
+[
+@echo off
+copy release\DoorServer.exe ..\Bin\Door
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP210.bat"
+
+複製了         1 個檔案。
+
+
+
+<h3>Results</h3>
+DoorServer.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: DoorServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Debug/Resource.res" /d "_DEBUG" "D:\VC\SeaAge\DoorServer\Resource.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP211.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\POS_INCLUDE" /I "..\POS_DLL_INCLUDE" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/DoorServer.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\VC\SeaAge\DoorServer\CloseSocket.cpp"
+"D:\VC\SeaAge\DoorServer\InitSocket.cpp"
+"D:\VC\SeaAge\DoorServer\ProcessSocket.cpp"
+"D:\VC\SeaAge\DoorServer\DoorServer_Create.cpp"
+"D:\VC\SeaAge\DoorServer\DoorServerMisc.cpp"
+"D:\VC\SeaAge\DoorServer\DoorServerShutDown.cpp"
+"D:\VC\SeaAge\DoorServer\ListView.cpp"
+"D:\VC\SeaAge\DoorServer\Log.cpp"
+"D:\VC\SeaAge\DoorServer\Main.cpp"
+"D:\VC\SeaAge\DoorServer\StatusBar.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP211.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP212.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib comlibdbg.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/DoorServerdbg.pdb" /debug /machine:I386 /out:"Debug/DoorServerdbg.exe" /pdbtype:sept 
+.\Debug\CloseSocket.obj
+.\Debug\InitSocket.obj
+.\Debug\ProcessSocket.obj
+.\Debug\DoorServer_Create.obj
+.\Debug\DoorServerMisc.obj
+.\Debug\DoorServerShutDown.obj
+.\Debug\ListView.obj
+.\Debug\Log.obj
+.\Debug\Main.obj
+.\Debug\StatusBar.obj
+.\Debug\Resource.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP212.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+CloseSocket.cpp
+InitSocket.cpp
+ProcessSocket.cpp
+DoorServer_Create.cpp
+DoorServerMisc.cpp
+DoorServerShutDown.cpp
+ListView.cpp
+Log.cpp
+Main.cpp
+StatusBar.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP214.tmp" with contents
+[
+/nologo /o"Debug/DoorServer.bsc" 
+.\Debug\CloseSocket.sbr
+.\Debug\InitSocket.sbr
+.\Debug\ProcessSocket.sbr
+.\Debug\DoorServer_Create.sbr
+.\Debug\DoorServerMisc.sbr
+.\Debug\DoorServerShutDown.sbr
+.\Debug\ListView.sbr
+.\Debug\Log.sbr
+.\Debug\Main.sbr
+.\Debug\StatusBar.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP214.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP215.bat" with contents
+[
+@echo off
+copy debug\DoorServerdbg.exe ..\Bin\Door
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP215.bat"
+
+複製了         1 個檔案。
+
+
+
+<h3>Results</h3>
+DoorServerdbg.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HNetGEH - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP216.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\POS_INCLUDE" /I "..\POS_DLL_INCLUDE" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "HNETGEH_EXPORTS" /FR"Release/" /Fp"Release/HNetGEH.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\VC\SeaAge\HNetGEH\DoorFunc.cpp"
+"D:\VC\SeaAge\HNetGEH\WorldFunc.cpp"
+"D:\VC\SeaAge\HNetGEH\ZoneFunc.cpp"
+"D:\VC\SeaAge\HNetGEH\CommonFunc.cpp"
+"D:\VC\SeaAge\HNetGEH\ServerLzo.cpp"
+"D:\VC\SeaAge\HNetGEH\NetGe_Sock.cpp"
+"D:\VC\SeaAge\HNetGEH\HNETGEH.CPP"
+"D:\VC\SeaAge\HNetGEH\Netge_Main.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP216.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP217.tmp" with contents
+[
+ddraw.lib dxguid.lib dsound.lib dinput.lib vfw32.lib winmm.lib strmbasd.lib ws2_32.lib Amstrmid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/HNetGEH.pdb" /machine:I386 /out:"Release/HNetGEH.dll" /implib:"Release/HNetGEH.lib" 
+.\Release\DoorFunc.obj
+.\Release\WorldFunc.obj
+.\Release\ZoneFunc.obj
+.\Release\CommonFunc.obj
+.\Release\ServerLzo.obj
+.\Release\NetGe_Sock.obj
+.\Release\HNETGEH.OBJ
+.\Release\Netge_Main.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP217.tmp"
+<h3>Output Window</h3>
+Compiling...
+DoorFunc.cpp
+WorldFunc.cpp
+ZoneFunc.cpp
+CommonFunc.cpp
+ServerLzo.cpp
+NetGe_Sock.cpp
+HNETGEH.CPP
+Netge_Main.cpp
+Linking...
+   Creating library Release/HNetGEH.lib and object Release/HNetGEH.exp
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP21B.bat" with contents
+[
+@echo off
+call PostBuild.bat
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP21B.bat"
+
+--------------------Jack Added: Make Dll and Include-------------------
+Copying dll files to seaage dll directory...
+Copying lib files to seaage lib directory...
+
+
+
+<h3>Results</h3>
+HNetGEH.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HNetGEH - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP21C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GR /GX /ZI /Od /I "..\POS_INCLUDE" /I "..\POS_DLL_INCLUDE" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "HNETGEH_EXPORTS" /FR"Debug/" /Fp"Debug/HNetGEH.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\VC\SeaAge\HNetGEH\DoorFunc.cpp"
+"D:\VC\SeaAge\HNetGEH\WorldFunc.cpp"
+"D:\VC\SeaAge\HNetGEH\ZoneFunc.cpp"
+"D:\VC\SeaAge\HNetGEH\CommonFunc.cpp"
+"D:\VC\SeaAge\HNetGEH\ServerLzo.cpp"
+"D:\VC\SeaAge\HNetGEH\NetGe_Sock.cpp"
+"D:\VC\SeaAge\HNetGEH\HNETGEH.CPP"
+"D:\VC\SeaAge\HNetGEH\Netge_Main.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP21C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP21D.tmp" with contents
+[
+ddraw.lib dxguid.lib dsound.lib dinput.lib vfw32.lib winmm.lib strmbasd.lib ws2_32.lib Amstrmid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/HNetGEHdbg.pdb" /debug /machine:I386 /out:"Debug/HNetGEHdbg.dll" /implib:"Debug/HNetGEHdbg.lib" /pdbtype:sept 
+.\Debug\DoorFunc.obj
+.\Debug\WorldFunc.obj
+.\Debug\ZoneFunc.obj
+.\Debug\CommonFunc.obj
+.\Debug\ServerLzo.obj
+.\Debug\NetGe_Sock.obj
+.\Debug\HNETGEH.OBJ
+.\Debug\Netge_Main.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP21D.tmp"
+<h3>Output Window</h3>
+Compiling...
+DoorFunc.cpp
+WorldFunc.cpp
+ZoneFunc.cpp
+CommonFunc.cpp
+ServerLzo.cpp
+NetGe_Sock.cpp
+HNETGEH.CPP
+Netge_Main.cpp
+Linking...
+   Creating library Debug/HNetGEHdbg.lib and object Debug/HNetGEHdbg.exp
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP221.bat" with contents
+[
+@echo off
+call PostBuild.bat
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP221.bat"
+
+--------------------Jack Added: Make Dll and Include-------------------
+Copying dll files to seaage dll directory...
+Copying lib files to seaage lib directory...
+
+
+
+<h3>Results</h3>
+HNetGEHdbg.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: WorldServer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Release/Resource.res" /d "NDEBUG" "D:\VC\SeaAge\WorldServer\Resource.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP222.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\POS_INCLUDE" /I "..\POS_DLL_INCLUDE" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/WorldServer.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\VC\SeaAge\WorldServer\CloseSocket.cpp"
+"D:\VC\SeaAge\WorldServer\InitSocket.cpp"
+"D:\VC\SeaAge\WorldServer\ProcessSocket.cpp"
+"D:\VC\SeaAge\WorldServer\InitWorldData.cpp"
+"D:\VC\SeaAge\WorldServer\Log.cpp"
+"D:\VC\SeaAge\WorldServer\Main.cpp"
+"D:\VC\SeaAge\WorldServer\WorldServer_Create.cpp"
+"D:\VC\SeaAge\WorldServer\WorldServerMisc.cpp"
+"D:\VC\SeaAge\WorldServer\WorldServerShutDown.cpp"
+"D:\VC\SeaAge\WorldServer\ListView.cpp"
+"D:\VC\SeaAge\WorldServer\StatusBar.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP222.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP223.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib comlib.lib /nologo /subsystem:windows /incremental:yes /pdb:"Release/WorldServer.pdb" /machine:I386 /out:"D:\Vc\seaage\Bin\World\WorldServer.exe" 
+.\Release\CloseSocket.obj
+.\Release\InitSocket.obj
+.\Release\ProcessSocket.obj
+.\Release\InitWorldData.obj
+.\Release\Log.obj
+.\Release\Main.obj
+.\Release\WorldServer_Create.obj
+.\Release\WorldServerMisc.obj
+.\Release\WorldServerShutDown.obj
+.\Release\ListView.obj
+.\Release\StatusBar.obj
+.\Release\Resource.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP223.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+CloseSocket.cpp
+InitSocket.cpp
+ProcessSocket.cpp
+InitWorldData.cpp
+Log.cpp
+Main.cpp
+WorldServer_Create.cpp
+WorldServerMisc.cpp
+WorldServerShutDown.cpp
+ListView.cpp
+StatusBar.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP225.tmp" with contents
+[
+/nologo /o"Release/WorldServer.bsc" 
+.\Release\CloseSocket.sbr
+.\Release\InitSocket.sbr
+.\Release\ProcessSocket.sbr
+.\Release\InitWorldData.sbr
+.\Release\Log.sbr
+.\Release\Main.sbr
+.\Release\WorldServer_Create.sbr
+.\Release\WorldServerMisc.sbr
+.\Release\WorldServerShutDown.sbr
+.\Release\ListView.sbr
+.\Release\StatusBar.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP225.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+WorldServer.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: WorldServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Debug/Resource.res" /d "_DEBUG" "D:\VC\SeaAge\WorldServer\Resource.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP226.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\POS_INCLUDE" /I "..\POS_DLL_INCLUDE" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/WorldServer.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\VC\SeaAge\WorldServer\CloseSocket.cpp"
+"D:\VC\SeaAge\WorldServer\InitSocket.cpp"
+"D:\VC\SeaAge\WorldServer\ProcessSocket.cpp"
+"D:\VC\SeaAge\WorldServer\InitWorldData.cpp"
+"D:\VC\SeaAge\WorldServer\Log.cpp"
+"D:\VC\SeaAge\WorldServer\Main.cpp"
+"D:\VC\SeaAge\WorldServer\WorldServer_Create.cpp"
+"D:\VC\SeaAge\WorldServer\WorldServerMisc.cpp"
+"D:\VC\SeaAge\WorldServer\WorldServerShutDown.cpp"
+"D:\VC\SeaAge\WorldServer\ListView.cpp"
+"D:\VC\SeaAge\WorldServer\StatusBar.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP226.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP227.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib comlibdbg.lib /nologo /subsystem:windows /incremental:no /pdb:"Debug/WorldServerdbg.pdb" /debug /machine:I386 /out:"D:\VC\seaage\Bin\World\WorldServerdbg.exe" /pdbtype:sept 
+.\Debug\CloseSocket.obj
+.\Debug\InitSocket.obj
+.\Debug\ProcessSocket.obj
+.\Debug\InitWorldData.obj
+.\Debug\Log.obj
+.\Debug\Main.obj
+.\Debug\WorldServer_Create.obj
+.\Debug\WorldServerMisc.obj
+.\Debug\WorldServerShutDown.obj
+.\Debug\ListView.obj
+.\Debug\StatusBar.obj
+.\Debug\Resource.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP227.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+CloseSocket.cpp
+InitSocket.cpp
+ProcessSocket.cpp
+InitWorldData.cpp
+Log.cpp
+Main.cpp
+WorldServer_Create.cpp
+WorldServerMisc.cpp
+WorldServerShutDown.cpp
+ListView.cpp
+StatusBar.cpp
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+
+
+
+<h3>Results</h3>
+WorldServerdbg.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: ZoneServer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Release/Resource.res" /d "NDEBUG" "D:\VC\SeaAge\ZoneServer\Resource.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP229.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\POS_INCLUDE" /I "..\POS_DLL_INCLUDE" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/ZoneServer.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\VC\SeaAge\ZoneServer\CloseSocket.cpp"
+"D:\VC\SeaAge\ZoneServer\InitSocket.cpp"
+"D:\VC\SeaAge\ZoneServer\ProcessSocket.cpp"
+"D:\VC\SeaAge\ZoneServer\HeartBeat.cpp"
+"D:\VC\SeaAge\ZoneServer\InitZoneData.cpp"
+"D:\VC\SeaAge\ZoneServer\Log.cpp"
+"D:\VC\SeaAge\ZoneServer\Main.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerCharacterDoing.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerDecodeMacro.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerDoingFunction.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerFight.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerMagic.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerMagicHit.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerRefreshGame.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerWeather.cpp"
+"D:\VC\SeaAge\ZoneServer\SyncHeartBeat.cpp"
+"D:\VC\SeaAge\ZoneServer\SyncPositionHeartBeat.cpp"
+"D:\VC\SeaAge\ZoneServer\SyncSeaPositionHeartBeat.cpp"
+"D:\VC\SeaAge\ZoneServer\ZoneServer_Create.cpp"
+"D:\VC\SeaAge\ZoneServer\ZoneServerMisc.cpp"
+"D:\VC\SeaAge\ZoneServer\ZoneServerShutDown.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP229.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comlib.lib /nologo /subsystem:windows /incremental:yes /pdb:"Release/ZoneServer.pdb" /machine:I386 /out:"../Bin/Zone/ZoneServer.exe" /libpath:"..\POS_LIB" 
+.\Release\CloseSocket.obj
+.\Release\InitSocket.obj
+.\Release\ProcessSocket.obj
+.\Release\HeartBeat.obj
+.\Release\InitZoneData.obj
+.\Release\Log.obj
+.\Release\Main.obj
+.\Release\ServerCharacterDoing.obj
+.\Release\ServerDecodeMacro.obj
+.\Release\ServerDoingFunction.obj
+.\Release\ServerFight.obj
+.\Release\ServerMagic.obj
+.\Release\ServerMagicHit.obj
+.\Release\ServerRefreshGame.obj
+.\Release\ServerWeather.obj
+.\Release\SyncHeartBeat.obj
+.\Release\SyncPositionHeartBeat.obj
+.\Release\SyncSeaPositionHeartBeat.obj
+.\Release\ZoneServer_Create.obj
+.\Release\ZoneServerMisc.obj
+.\Release\ZoneServerShutDown.obj
+.\Release\Resource.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+CloseSocket.cpp
+InitSocket.cpp
+ProcessSocket.cpp
+HeartBeat.cpp
+InitZoneData.cpp
+Log.cpp
+Main.cpp
+ServerCharacterDoing.cpp
+ServerDecodeMacro.cpp
+ServerDoingFunction.cpp
+ServerFight.cpp
+ServerMagic.cpp
+ServerMagicHit.cpp
+D:\VC\SeaAge\ZoneServer\ServerMagic.cpp(245) : warning C4700: local variable 'relation' used without having been initialized
+D:\VC\SeaAge\ZoneServer\ServerMagic.cpp(294) : warning C4700: local variable 'relation' used without having been initialized
+D:\VC\SeaAge\ZoneServer\ServerMagic.cpp(397) : warning C4700: local variable 'relation' used without having been initialized
+ServerRefreshGame.cpp
+ServerWeather.cpp
+SyncHeartBeat.cpp
+SyncPositionHeartBeat.cpp
+SyncSeaPositionHeartBeat.cpp
+ZoneServer_Create.cpp
+ZoneServerMisc.cpp
+D:\VC\SeaAge\ZoneServer\ZoneServerMisc.cpp(5087) : warning C4101: 'EventZoneGetItemID' : unreferenced local variable
+ZoneServerShutDown.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+ZoneServer.exe - 0 error(s), 4 warning(s)
+<h3>
+--------------------Configuration: ZoneServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Debug/Resource.res" /d "_DEBUG" "D:\VC\SeaAge\ZoneServer\Resource.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\POS_INCLUDE" /I "..\POS_DLL_INCLUDE" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/ZoneServer.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\VC\SeaAge\ZoneServer\CloseSocket.cpp"
+"D:\VC\SeaAge\ZoneServer\InitSocket.cpp"
+"D:\VC\SeaAge\ZoneServer\ProcessSocket.cpp"
+"D:\VC\SeaAge\ZoneServer\HeartBeat.cpp"
+"D:\VC\SeaAge\ZoneServer\InitZoneData.cpp"
+"D:\VC\SeaAge\ZoneServer\Log.cpp"
+"D:\VC\SeaAge\ZoneServer\Main.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerCharacterDoing.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerDecodeMacro.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerDoingFunction.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerFight.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerMagic.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerMagicHit.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerRefreshGame.cpp"
+"D:\VC\SeaAge\ZoneServer\ServerWeather.cpp"
+"D:\VC\SeaAge\ZoneServer\SyncHeartBeat.cpp"
+"D:\VC\SeaAge\ZoneServer\SyncPositionHeartBeat.cpp"
+"D:\VC\SeaAge\ZoneServer\SyncSeaPositionHeartBeat.cpp"
+"D:\VC\SeaAge\ZoneServer\ZoneServer_Create.cpp"
+"D:\VC\SeaAge\ZoneServer\ZoneServerMisc.cpp"
+"D:\VC\SeaAge\ZoneServer\ZoneServerShutDown.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comlibdbg.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/ZoneServerdbg.pdb" /debug /machine:I386 /out:"D:\VC\Seaage\Bin\Zone\ZoneServerdbg.exe" /pdbtype:sept /libpath:"..\POS_LIB" 
+.\Debug\CloseSocket.obj
+.\Debug\InitSocket.obj
+.\Debug\ProcessSocket.obj
+.\Debug\HeartBeat.obj
+.\Debug\InitZoneData.obj
+.\Debug\Log.obj
+.\Debug\Main.obj
+.\Debug\ServerCharacterDoing.obj
+.\Debug\ServerDecodeMacro.obj
+.\Debug\ServerDoingFunction.obj
+.\Debug\ServerFight.obj
+.\Debug\ServerMagic.obj
+.\Debug\ServerMagicHit.obj
+.\Debug\ServerRefreshGame.obj
+.\Debug\ServerWeather.obj
+.\Debug\SyncHeartBeat.obj
+.\Debug\SyncPositionHeartBeat.obj
+.\Debug\SyncSeaPositionHeartBeat.obj
+.\Debug\ZoneServer_Create.obj
+.\Debug\ZoneServerMisc.obj
+.\Debug\ZoneServerShutDown.obj
+.\Debug\Resource.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+CloseSocket.cpp
+InitSocket.cpp
+ProcessSocket.cpp
+HeartBeat.cpp
+InitZoneData.cpp
+Log.cpp
+Main.cpp
+ServerCharacterDoing.cpp
+ServerDecodeMacro.cpp
+ServerDoingFunction.cpp
+ServerFight.cpp
+ServerMagic.cpp
+ServerMagicHit.cpp
+D:\VC\SeaAge\ZoneServer\ServerMagic.cpp(245) : warning C4700: local variable 'relation' used without having been initialized
+D:\VC\SeaAge\ZoneServer\ServerMagic.cpp(294) : warning C4700: local variable 'relation' used without having been initialized
+D:\VC\SeaAge\ZoneServer\ServerMagic.cpp(397) : warning C4700: local variable 'relation' used without having been initialized
+ServerRefreshGame.cpp
+ServerWeather.cpp
+SyncHeartBeat.cpp
+SyncPositionHeartBeat.cpp
+SyncSeaPositionHeartBeat.cpp
+ZoneServer_Create.cpp
+ZoneServerMisc.cpp
+D:\VC\SeaAge\ZoneServer\ZoneServerMisc.cpp(5087) : warning C4101: 'EventZoneGetItemID' : unreferenced local variable
+ZoneServerShutDown.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22F.tmp" with contents
+[
+/nologo /o"Debug/ZoneServer.bsc" 
+.\Debug\CloseSocket.sbr
+.\Debug\InitSocket.sbr
+.\Debug\ProcessSocket.sbr
+.\Debug\HeartBeat.sbr
+.\Debug\InitZoneData.sbr
+.\Debug\Log.sbr
+.\Debug\Main.sbr
+.\Debug\ServerCharacterDoing.sbr
+.\Debug\ServerDecodeMacro.sbr
+.\Debug\ServerDoingFunction.sbr
+.\Debug\ServerFight.sbr
+.\Debug\ServerMagic.sbr
+.\Debug\ServerMagicHit.sbr
+.\Debug\ServerRefreshGame.sbr
+.\Debug\ServerWeather.sbr
+.\Debug\SyncHeartBeat.sbr
+.\Debug\SyncPositionHeartBeat.sbr
+.\Debug\SyncSeaPositionHeartBeat.sbr
+.\Debug\ZoneServer_Create.sbr
+.\Debug\ZoneServerMisc.sbr
+.\Debug\ZoneServerShutDown.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22F.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ZoneServerdbg.exe - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

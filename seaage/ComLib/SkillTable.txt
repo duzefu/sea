@@ -1,0 +1,35 @@
+;----------------------------------------------------------------------------
+;技能表格式
+;----------------------------------------------------------------------------
+;   SLONG	Index;				//編號
+;
+;   CHAR    Name[32];			//名稱
+;   SLONG   Attrib;				//屬性
+;   SLONG   IconIndex;			//圖標編號
+;
+;   SLONG   PrepareTicks;		//前置時間
+;   SLONG   SpowerTicks;		//蓄力時間
+;   SLONG   DelayTicks;			//延時期(多次傷害的間隔時間)
+;	SLONG	PersistTicks;		//功能持續時間
+;	SLONG	PuntTicks;			//施法完成後需要的喘息時間
+;
+;	SLONG	DoTimes;			//法術動作次數
+;	SLONG	NeedMp;				//需要法力值
+;	SLONG	Abnormaity;			//異常狀態
+;
+;	SLONG	ExplodeRange;		//爆炸產生後的有效攻擊範圍
+;   SLONG   ExplodeDistance;    //爆炸產生時需要法術組件接近目標的距離
+;   SLONG   TargetDistance;     //施法者在進行施法動作時需要接近目標的距離
+;
+;	SLONG	SpecialID;			//對應 NPC 的特殊影像文件ID
+;
+;	SLONG	HitType;			//命中方式
+;	SLONG	PhysicAttackRatio;	//影響物理攻擊力(%)
+;	SLONG	MagicAttackRatio;	//影響法術攻擊力(%)
+;	SLONG	SpecialAttackRatio;	//影響特殊攻擊力(%)
+;	SLONG	AttatchDefenceData;	//附加防禦力數值
+;	SLONG	AttachDefenceTicks;	//附加防禦力時間
+;	SLONG	DodgeRate;			//躲避率(%)
+;	SLONG	ExplodeRate;		//膛爆率(%)
+;	SLONG	ChangeRate;			//變黑人,變烏龜,變豬的機率
+;

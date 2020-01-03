@@ -1,0 +1,226 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZoneServer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Resource.res" /d "NDEBUG" "D:\程序\seavss\vss\seaage\ZoneServer\Resource.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4B.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/ZoneServer.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\程序\seavss\vss\seaage\ZoneServer\CloseSocket.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\HeartBeat.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\InitSocket.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\InitZoneData.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\Log.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\Main.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ProcessSocket.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\SaveDataHeartBeat.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerCharacterDoing.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerDecodeMacro.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerDoingFunction.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerEnemy.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerFight.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerFindGold.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerItem.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerMagic.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerMagicHit.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerQuest.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerRefreshGame.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerTeam.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ServerWeather.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\SyncHeartBeat.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\SyncPositionHeartBeat.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\SyncSeaPositionHeartBeat.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ZoneServer_Create.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ZoneServerMisc.cpp"
+"D:\程序\seavss\vss\seaage\ZoneServer\ZoneServerShutDown.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Account.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Global.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\Dummy.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_AI.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Bank.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Character.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Common.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_DBFunc.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Doing.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Fight.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_House.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Item.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Magic.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_MAGIC_mindoingKind.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_MagicBreak.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_MapMask.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_MapProc.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Message.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_MFSystem.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Misc.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_NPC_mindoingKind.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_ODBC.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Port.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_QQ.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Script.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Ship.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Skill.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_SkillProc.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Store.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Treasury.cpp"
+"D:\程序\seavss\vss\seaage\ComLib\NetGE_Utility.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/ZoneServer.pdb" /machine:I386 /out:"Release/ZoneServer.exe" 
+".\Release\CloseSocket.obj"
+".\Release\HeartBeat.obj"
+".\Release\InitSocket.obj"
+".\Release\InitZoneData.obj"
+".\Release\Log.obj"
+".\Release\Main.obj"
+".\Release\ProcessSocket.obj"
+".\Release\SaveDataHeartBeat.obj"
+".\Release\ServerCharacterDoing.obj"
+".\Release\ServerDecodeMacro.obj"
+".\Release\ServerDoingFunction.obj"
+".\Release\ServerEnemy.obj"
+".\Release\ServerFight.obj"
+".\Release\ServerFindGold.obj"
+".\Release\ServerItem.obj"
+".\Release\ServerMagic.obj"
+".\Release\ServerMagicHit.obj"
+".\Release\ServerQuest.obj"
+".\Release\ServerRefreshGame.obj"
+".\Release\ServerTeam.obj"
+".\Release\ServerWeather.obj"
+".\Release\SyncHeartBeat.obj"
+".\Release\SyncPositionHeartBeat.obj"
+".\Release\SyncSeaPositionHeartBeat.obj"
+".\Release\ZoneServer_Create.obj"
+".\Release\ZoneServerMisc.obj"
+".\Release\ZoneServerShutDown.obj"
+".\Release\Resource.res"
+".\Release\NetGE_Account.obj"
+".\Release\NetGE_Global.obj"
+".\Release\Dummy.obj"
+".\Release\NetGE_AI.obj"
+".\Release\NetGE_Bank.obj"
+".\Release\NetGE_Character.obj"
+".\Release\NetGE_Common.obj"
+".\Release\NetGE_DBFunc.obj"
+".\Release\NetGE_Doing.obj"
+".\Release\NetGE_Fight.obj"
+".\Release\NetGE_House.obj"
+".\Release\NetGE_Item.obj"
+".\Release\NetGE_Magic.obj"
+".\Release\NetGE_MAGIC_mindoingKind.obj"
+".\Release\NetGE_MagicBreak.obj"
+".\Release\NetGE_MapMask.obj"
+".\Release\NetGE_MapProc.obj"
+".\Release\NetGE_Message.obj"
+".\Release\NetGE_MFSystem.obj"
+".\Release\NetGE_Misc.obj"
+".\Release\NetGE_NPC_mindoingKind.obj"
+".\Release\NetGE_ODBC.obj"
+".\Release\NetGE_Port.obj"
+".\Release\NetGE_QQ.obj"
+".\Release\NetGE_Script.obj"
+".\Release\NetGE_Ship.obj"
+".\Release\NetGE_Skill.obj"
+".\Release\NetGE_SkillProc.obj"
+".\Release\NetGE_Store.obj"
+".\Release\NetGE_Treasury.obj"
+".\Release\NetGE_Utility.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+CloseSocket.cpp
+HeartBeat.cpp
+InitSocket.cpp
+InitZoneData.cpp
+Log.cpp
+Main.cpp
+ProcessSocket.cpp
+SaveDataHeartBeat.cpp
+ServerCharacterDoing.cpp
+D:\程序\seavss\vss\seaage\ZoneServer\ServerCharacterDoing.cpp(385) : warning C4244: 'argument' : conversion from 'long' to 'char', possible loss of data
+D:\程序\seavss\vss\seaage\ZoneServer\ServerCharacterDoing.cpp(385) : warning C4244: 'argument' : conversion from 'long' to 'char', possible loss of data
+ServerDecodeMacro.cpp
+D:\程序\seavss\vss\seaage\ZoneServer\ServerDecodeMacro.cpp(1472) : warning C4101: 'npc_no' : unreferenced local variable
+D:\程序\seavss\vss\seaage\ZoneServer\ServerDecodeMacro.cpp(1473) : warning C4101: 'next_proc' : unreferenced local variable
+ServerDoingFunction.cpp
+ServerEnemy.cpp
+ServerFight.cpp
+D:\程序\seavss\vss\seaage\ZoneServer\ServerFight.cpp(574) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+D:\程序\seavss\vss\seaage\ZoneServer\ServerFight.cpp(579) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+ServerFindGold.cpp
+ServerItem.cpp
+ServerMagic.cpp
+ServerMagicHit.cpp
+D:\程序\seavss\vss\seaage\ZoneServer\ServerMagic.cpp(295) : warning C4700: local variable 'relation' used without having been initialized
+D:\程序\seavss\vss\seaage\ZoneServer\ServerMagic.cpp(347) : warning C4700: local variable 'relation' used without having been initialized
+D:\程序\seavss\vss\seaage\ZoneServer\ServerMagic.cpp(454) : warning C4700: local variable 'relation' used without having been initialized
+ServerQuest.cpp
+ServerRefreshGame.cpp
+ServerTeam.cpp
+ServerWeather.cpp
+SyncHeartBeat.cpp
+SyncPositionHeartBeat.cpp
+SyncSeaPositionHeartBeat.cpp
+ZoneServer_Create.cpp
+ZoneServerMisc.cpp
+ZoneServerShutDown.cpp
+NetGE_Account.cpp
+NetGE_Global.cpp
+Dummy.cpp
+NetGE_AI.cpp
+NetGE_Bank.cpp
+NetGE_Character.cpp
+NetGE_Common.cpp
+NetGE_DBFunc.cpp
+D:\程序\seavss\vss\seaage\ComLib\NetGE_DBFunc.cpp(2226) : warning C4101: 'len' : unreferenced local variable
+D:\程序\seavss\vss\seaage\ComLib\NetGE_DBFunc.cpp(2465) : warning C4101: 'len' : unreferenced local variable
+D:\程序\seavss\vss\seaage\ComLib\NetGE_DBFunc.cpp(2495) : warning C4101: 'len' : unreferenced local variable
+NetGE_Doing.cpp
+NetGE_Fight.cpp
+NetGE_House.cpp
+NetGE_Item.cpp
+NetGE_Magic.cpp
+NetGE_MAGIC_mindoingKind.cpp
+NetGE_MagicBreak.cpp
+NetGE_MapMask.cpp
+NetGE_MapProc.cpp
+NetGE_Message.cpp
+NetGE_MFSystem.cpp
+NetGE_Misc.cpp
+NetGE_NPC_mindoingKind.cpp
+NetGE_ODBC.cpp
+NetGE_Port.cpp
+NetGE_QQ.cpp
+NetGE_Script.cpp
+NetGE_Ship.cpp
+NetGE_Skill.cpp
+NetGE_SkillProc.cpp
+NetGE_Store.cpp
+NetGE_Treasury.cpp
+D:\程序\seavss\vss\seaage\ComLib\NetGE_Treasury.cpp(78) : warning C4244: 'return' : conversion from 'long' to 'unsigned short', possible loss of data
+NetGE_Utility.cpp
+Linking...
+LIBCMT.lib(tolower.obj) : error LNK2005: __tolower already defined in LIBC.lib(tolower.obj)
+LIBCMT.lib(tolower.obj) : error LNK2005: _tolower already defined in LIBC.lib(tolower.obj)
+LINK : warning LNK4098: defaultlib "LIBCMT" conflicts with use of other libs; use /NODEFAULTLIB:library
+2dengine.lib(xdraw.obj) : error LNK2001: unresolved external symbol _DirectDrawCreateEx@16
+2dengine.lib(xdraw.obj) : error LNK2001: unresolved external symbol _IID_IDirectDraw7
+Release/ZoneServer.exe : fatal error LNK1120: 2 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+ZoneServer.exe - 5 error(s), 14 warning(s)
+</pre>
+</body>
+</html>

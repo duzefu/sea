@@ -1,0 +1,253 @@
+2003.5.12.
+--------------------------------------------------------------------------------------
+新增任務的數據庫操作:
+typedef	struct POS_DB_QUEST
+{
+	CHAR	MainName[32];	//角色名字
+	UHINT	Index;			//任務索引值
+	TPOS_QUEST_INFO	Info;	//任務資訊
+} TPOS_DB_QUEST;
+//
+extern	SLONG	AppendRecordToQuestDB(TPOS_DB_QUEST *lpQuest);
+extern	SLONG	DeleteRecordFromQuestDBByMainName(CHAR *szMainName);
+extern	SLONG	UpdateRecordOfQuestDBByMainNameAndIndex(TPOS_DB_QUEST *lpQuest);
+extern	SLONG	GetRecordFromQuestDBByMainNameAndIndex(TPOS_DB_QUEST *lpQuest, CHAR *szMainName, SLONG lIndex);
+extern	VOID	BindQuestDBColumn(HSTMT hStmt, TPOS_DB_QUEST *lpQuest);
+//
+extern	SLONG	InitQuestDBWhenCreateCharacter(CHAR *szMainName);
+extern	SLONG	LoadCharacterQuestData(SLONG lIndex);
+extern	SLONG	SaveCharacterQuestData(SLONG lIndex);
+//
+
+
+
+2003.4.8.
+--------------------------------------------------------------------------------------
+●JACK●
+(1) 新增函數:
+
+	//依據人物名稱和物品編號，從物品的數據庫中載入人物的物品資訊。
+	SLONG	LoadCharacterItemDataByMainNameAndIndex(SLONG lIndex);
+
+	//依據人物名稱和物品編號，將人物的物品資訊儲存到物品的數據庫中。
+	SLONG	SaveCharacterItemDataByMainNameAndIndex(SLONG lIndex);
+
+	//當創建人物資料時，同時在物品資料庫中建立該人物的物品資訊。
+	SLONG	InitItemDBWhenCreateCharacter(CHAR *szMainName);
+
+●●●●MEMO●●●●
+在MyCC/DB的操作中，Index為保留字，不能作為Field的名稱，否則會發生錯誤。
+
+
+	
+
+
+
+2003.2.27.
+--------------------------------------------------------------------------------------
+(1) MF 系統.
+(2)	物品特殊屬性新增加:
+	#define	ITEM_SPECIAL_UNIQUE					0x40000000	//是否為紫晶裝備
+	#define	ITEM_SPECIAL_ARTIFACTS				0x80000000	//是否為神器
+(3) 物品數值表需要增加欄位
+	a)每個物品對應的紫晶裝備 ID
+	b)每個物品對應的神器裝備 ID
+	c)物品的附加屬性(8個f)(適用於紫晶,神器)
+(4) 需要增加 《物品附加屬性表》.
+(5) 增加特別定義:
+	#define	CHARACTER_SPECIAL_ITEM			0x00000080	//怪物死亡掉出特定物品
+	extern	SLONG	IsCharacterOnSpecialItem(SLONG lIndex);
+	extern	void	SetCharacterOnSpecialItem(SLONG lIndex, SLONG lFlag);
+
+
+2003.2.24.
+--------------------------------------------------------------------------------------
+(1) 完成模組 NetGE_Store.
+(2) for ZoneServer:
+	a) Add script command:
+		INIT_STORE #zone_store_index #game_store_base_index
+	b) Add script proc call when load zone, the proc call include processing of init
+	   zone stores.
+	c) Add script command for test npc:
+		NPC_STORE #zone_store_index #next_proc
+	d) Add some event struct and event defines for transport game store message.
+	e) When player buy sth from store, the item's price use:
+		GetItemBuyCost();
+	   When player sell sth to store, the item's price use:
+	    GetItemSellPrice();
+
+
+
+2003.2.19.
+--------------------------------------------------------------------------------------
+(1) Added data to Character:
+	Character -> ULONG NameColorTicks;
+	Character -> ULONG TotalOnlineTicks;
+(2) Added data to DBCharacter:
+	DBCharacter -> ULONG NameColorTicks;
+	DBCharacter -> ULONG TotalOnlineTicks;
+(3) Update CreateDB tools.
+	
+
+
+2003.2.18.
+--------------------------------------------------------------------------------------
+(1) Added data compute functions.
+(2) ●TODO(for ComLib):
+	商店(NetGE_Store.cpp, NetGE_Store.h).
+	銀行(...)
+	儲物箱,保險箱(在玩家的房子中)
+
+
+	●TODO(for ComLib):
+	貿易(NetGE_Shop.cpp, NetGE_Shop.h)
+
+	●TODO(for Editor)
+	船隻模型加上風力,風向影響, 測試碰撞的實現方式.
+
+	●TODO(for Client)
+	重新書寫商店的介面, 需要按照商店,銀行,儲物箱,保險箱分別進行.
+
+
+2003.1.29.
+--------------------------------------------------------------------------------------
+(1) Added sea npc dir which defferent with land npc's dir.
+
+
+2003.1.24.
+--------------------------------------------------------------------------------------
+(1) Added data members to Character Struct, "NetGE_Character":
+		ULONG Character.Style.PartRGB[7]
+	Added 2 functions to access the RGB:
+		void	SetCharacterPartRGB(SLONG lIndex, SLONG lPart, ULONG uRGB);
+		ULONG	GetCharacterPartRGB(SLONG lIndex, SLONG lPart);
+(2) Added Magic Part functions, "NetGE_Magic"
+
+
+
+2003.1.21.
+--------------------------------------------------------------------------------------
+(1) Added Functions to "NetGE_Character.h" :
+	SLONG	IsCharacterOnPauseState(SLONG lIndex);
+	void	SetCharacterOnPauseState(SLONG lIndex, SLONG lFlag);
+	void	SetCharacterDialogWithCount(SLONG lIndex, SLONG lCount);
+	SLONG	GetCharacterDialogWithCount(SLONG lIndex);
+	void	SetCharacterDialogDestIndex(SLONG lIndex, SLONG lDestIndex);
+	SLONG	GetCharacterDialogDestIndex(SLONG lIndex);
+(2) Added Functions to "NetGE_Utility.h" :
+	extern	void	ExecCharacterPause(SLONG lIndex);
+
+
+
+
+2003.1.20.
+--------------------------------------------------------------------------------------
+TALK_CLEAR
+TALK_SAY %d %s
+TALK_NEXT %d
+TALK_SHOW
+:
+:
+
+CHECK_ITEM %d %d
+CHECK_CAREER %d %d
+CHECK_SEX %d %d
+CHECK_MONEY %d
+CHECK_LEVLE %d
+CHECK_HP %d
+CHECK_MP %d
+CHECK_
+
+
+;
+;
+;check item proc
+PROC	200
+	CHECK_ITEM 10 1501
+	IF 10 > 0
+	   TALK_CLEAR
+	   TALK_SAY 0 You have the item.
+	   TALK_SAY 1 Please come in !
+	   TALK_NEXT 999
+	   TALK_SHOW
+	ELSE
+	   TALK_CLEAR
+	   TALK_SAY 0 You havn't the item.
+	   TALK_SAY 1 Please stay here !
+	   TALK_NEXT 999
+	   TALK_SHOW
+	ENDIF
+ENDPROC
+
+
+
+
+
+
+2003.1.11.
+--------------------------------------------------------------------------------------
+Update character's data structure:
+
+    union
+    {
+        SLONG   dest_x;         //目標點座標 X
+        SLONG   sequential_step;//連擊: 是否進行下一個連續的動作
+        SLONG   beated_by;      //被擊: 誰攻擊我 ?
+    };
+    union
+    {
+        SLONG   dest_y;         //目標點座標
+        SLONG   idle_ticks;     //待機: 待機的時間
+        SLONG   muse_ticks;     //冥想: 每隔多長時間進行一次數值計算
+        SLONG   beated_with;    //被擊: 被甚麼技能攻擊 ?
+    };
+    union
+    {
+        SLONG   dest_z;         //目標點座標
+        SLONG   pant_ticks;     //被擊倒: 擊倒在地上與爬起來之間的喘息時間
+        SLONG   dead_ticks;     //死亡: 死亡後屍體保留時間
+        SLONG   dead_alpha;     //死亡: 死亡後屍體消失的ALPHA值
+    };
+    union
+    {
+        SLONG   dest_no;        //目標對象
+        SLONG   clash_steps;    //衝撞: 衝撞的步數
+        SLONG   patrol_ticks;   //巡邏: 巡邏IDLE的當前時間
+    };
+
+    union
+    {
+        SLONG   orig_x;         //起始位置
+        SLONG   gad_total_ticks;//隨機移動: IDLE的總時間
+        SLONG   beated_x;       //被擊,死亡,被擊倒: 攻擊源座標 x
+    };
+    union
+    {
+        SLONG   orig_y;         //起始位置
+        SLONG   gad_ticks;      //隨機移動: IDLE的當前時間
+        SLONG   beated_y;       //被擊,死亡,被擊倒: 攻擊源座標 y
+    };
+    SLONG   orig_z;             //起始位置
+    union
+    {
+        SLONG   orig_no;            //起始對象
+        SLONG   patrol_total_ticks; //巡邏: 巡邏IDLE的總時間
+    };
+    UCHR    dest_dir;           //目標方向
+
+
+2002.12.24.
+--------------------------------------------------------------------------------------
+模組定義:
+NetGE_Account		玩家帳號
+NetGE_Bank			人物銀行
+NetGE_Character		人物角色
+NetGE_House			房屋
+NetGE_Item			物品
+NetGE_Port			港口
+NetGE_QQ			聊天
+NetGE_Ship			船隻
+NetGE_Common		公用函式及聲明
+NetGE_MapMask		地圖阻擋函式
+NetGE_MapProc		地圖事件函式
+

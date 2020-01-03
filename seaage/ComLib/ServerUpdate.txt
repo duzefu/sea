@@ -1,0 +1,29 @@
+2003.2.17.
+-------------------------------------------------------------------------------------
+For ZoneServer:
+===============
+(1) 修改 玩家升級後將獲得的屬性點轉換為自己的力量,直覺,智力,運氣時的計算.
+
+
+
+2003.2.13.
+-------------------------------------------------------------------------------------
+For ZoneServer:
+===============
+(1) Delete code of loading "attack.ini", "defence.ini", "hp.ini", "mp.ini".
+(2)	After 
+		InitCareerUpgrade();
+		LoadCareerUpgrade();
+	We need to load career base affect informations:
+		InitCareerBaseAffectInfo();
+		LoadCareerBaseAffectInfo();
+(3)	Delete files of executable environment:
+		del data\attack.ini
+		del data\defence.ini
+		del data\hp.ini
+		del data\mp.ini
+(4) Add files to executable environment:
+		add data\manbase.ini
+
+
+
